@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription Newsletter La Puce</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f8f8f7; /* Nouveau fond de page */
+            color: #000033;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh; /* S'assure que le contenu est centré verticalement */
+        }
+        .form-container {
+            max-width: 500px;
+            width: 100%;
+            background-color: #ffffff; /* Nouveau fond de carte */
+            padding: 2rem;
+            border-radius: 1rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            color: #000033;
+            box-sizing: border-box;
+        }
+        .form-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+        .form-group {
+            margin-bottom: 1rem;
+        }
+        .form-group label {
+            display: block;
+            font-size: 0.875rem;
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+        }
+        .form-group input[type="text"],
+        .form-group input[type="email"] {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #cbd5e1;
+            border-radius: 0.5rem;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1rem;
+            color: #000033;
+        }
+        .form-group input[type="text"]:focus,
+        .form-group input[type="email"]:focus {
+            outline: none;
+            border-color: #000033;
+            box-shadow: 0 0 0 2px rgba(0, 0, 51, 0.2);
+        }
+        .submit-button {
+            width: 100%;
+            padding: 0.75rem;
+            background-color: #46b249; /* Vert de La Puce */
+            color: white;
+            font-size: 1rem;
+            font-weight: 700;
+            border: none;
+            border-radius: 0.5rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .submit-button:hover {
+            background-color: #3f993e; /* Vert plus foncé au survol */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <h2 class="form-title">Inscrivez-vous à notre newsletter !</h2>
+        <form action="https://app.cyberimpact.com/clients/19807/subscribe-forms/875D7B8B-CC66-4A16-BB61-7319AE8E512C/submit" method="post" target="_blank">
+            <div class="form-group">
+                <label for="Prénom">Votre Prénom</label>
+                <input type="text" id="Prénom" name="Prénom" required>
+            </div>
+            <div class="form-group">
+                <label for="Nom">Votre Nom</label>
+                <input type="text" id="Nom" name="Nom" required>
+            </div>
+            <div class="form-group">
+                <label for="Email">Votre Adresse E-mail</label>
+                <input type="email" id="Email" name="Email" required>
+            </div>
+            <button type="submit" class="submit-button">Je m'inscris</button>
+        </form>
+    </div>
+
+</body>
+</html>
